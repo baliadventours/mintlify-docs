@@ -1,0 +1,53 @@
+---
+title: "Import Bookings from Viator, Klook, and GetYourGuide"
+sidebarTitle: "OTA Import"
+description: "Use Tripbone's OTA Extraction tool to paste a confirmation email from any OTA and instantly import guest name, date, tour, and pax into your dashboard."
+---
+
+If you sell tours on Viator, Klook, GetYourGuide, or other online travel agencies, you do not need to type every guest detail into Tripbone by hand. The OTA Extraction tool reads the confirmation email, pulls out the key data, and creates a booking record in your dashboard in seconds.
+
+## How OTA Extraction works
+
+Tripbone uses Google Gemini AI to scan the text of any OTA confirmation email. It identifies the guest name, tour name, travel date, number of travelers, pickup location, and any special requests. You review the extracted details, confirm, and the booking is saved.
+
+## Import a booking from an OTA email
+
+<Steps>
+  <Step title="Open the confirmation email">
+    In your inbox, find the booking confirmation email from Viator, Klook, GetYourGuide, or another OTA.
+  </Step>
+  <Step title="Copy the full email text">
+    Select all the text in the email body, including headers, booking reference, guest details, and tour information. Copy it to your clipboard.
+  </Step>
+  <Step title="Open OTA Import in Tripbone">
+    In your Tripbone admin, go to **Bookings** \> **OTA Import**.
+  </Step>
+  <Step title="Paste and extract">
+    Paste the copied email text into the input box, then click **Extract**. Tripbone scans the text and fills in the booking fields automatically.
+  </Step>
+  <Step title="Review and confirm">
+    Check the extracted guest name, date, tour, and number of travelers. If everything looks correct, click **Confirm Import**. The booking now appears in your dashboard with status **Confirmed**.
+  </Step>
+</Steps>
+
+<Tip>
+  OTA Extraction also works with Airbnb Experiences and most other OTA confirmation formats. If the email is in English and contains standard booking details, Tripbone can usually parse it.
+</Tip>
+
+## What to check after import
+
+After the AI extracts the data, always verify these fields before confirming:
+
+- **Guest name** — Make sure first and last names are in the correct order.
+- **Tour** — Tripbone tries to match the tour name to your inventory. If it does not match, select the correct tour manually.
+- **Date and time** — Confirm the departure date and any stated pickup time.
+- **Number of travelers** — Check adults, children, and infants separately.
+- **Pickup location** — This is used for dispatch. Correct it if the AI misread the hotel or address.
+
+If any field is wrong, edit it directly in the review panel before you click Confirm Import.
+
+## Next steps
+
+- [Manage and update bookings](/bookings/manage)
+- [Dispatch guides and drivers](/bookings/dispatch)
+- [Set up your tour inventory](/inventory/index)

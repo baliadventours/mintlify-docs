@@ -1,0 +1,97 @@
+---
+title: "Connect Analytics, Webhooks, and External Tools"
+sidebarTitle: "Integrations"
+description: "Drop in your Google Analytics or Meta Pixel tracking code, configure webhooks for Zapier automation, and use the 1-click Backup and Restore tool from Tripbone's Settings panel."
+---
+
+Tripbone connects to the marketing and automation tools you already use. You can add tracking pixels to measure ad performance, send booking data to Zapier for workflow automation, inject custom scripts for live chat or support widgets, and protect your business with one-click database backups.
+
+## Add Google Analytics or Meta Pixel
+
+<Steps>
+  <Step title="Open Integrations settings">
+    Go to **Settings \> Integrations** and scroll to **Tracking Scripts**.
+  </Step>
+  <Step title="Paste your tracking code">
+    Copy your Google Analytics measurement ID (e.g., `G-XXXXXXXXXX`) or Meta Pixel base code from your ad account, then paste it into the corresponding field.
+  </Step>
+  <Step title="Enable the script">
+    Toggle the switch to **Active**. Tripbone injects the script on every public page of your storefront.
+  </Step>
+  <Step title="Verify installation">
+    Visit your live storefront and use the Google Tag Assistant browser extension or Meta Pixel Helper to confirm the tag is firing.
+  </Step>
+</Steps>
+
+## Configure webhooks for Zapier
+
+Webhooks let you send real-time booking events to Zapier, Make, or any endpoint you control. This is useful for automatically adding guests to your email list, creating calendar events, or notifying a Slack channel.
+
+<Steps>
+  <Step title="Open Webhooks">
+    In **Settings \> Integrations**, click **Webhooks**.
+  </Step>
+  <Step title="Add an endpoint">
+    Click **Add Webhook** and paste your Zapier webhook URL or custom endpoint.
+  </Step>
+  <Step title="Select events">
+    Choose which events trigger the webhook:
+
+    - **Booking created**
+    - **Booking updated**
+    - **Booking cancelled**
+    - **Payment received**
+    - **Guest review submitted**
+  </Step>
+  <Step title="Test the connection">
+    Click **Send Test Payload**. You should see the test data arrive in your Zapier trigger history within seconds.
+  </Step>
+</Steps>
+
+## Inject custom scripts
+
+If you use a live chat widget, cookie consent banner, or any third-party tool that requires a script tag, you can add it directly without editing code.
+
+<Steps>
+  <Step title="Open Custom Scripts">
+    Go to **Settings \> Integrations \> Custom Scripts**.
+  </Step>
+  <Step title="Add your script">
+    Paste the script provided by your chat or support tool (e.g., Intercom, Tawk.to, Crisp).
+  </Step>
+  <Step title="Choose placement">
+    Select **Head** (loads before page content) or **Body** (loads after page content). Most tracking and chat widgets belong in the **Head**.
+  </Step>
+  <Step title="Save and verify">
+    Click **Save** and check your storefront to confirm the widget appears.
+  </Step>
+</Steps>
+
+## Backup and restore your data
+
+Tripbone includes a 1-click backup tool that snapshots your entire database, including tours, bookings, users, settings, and media references.
+
+<Steps>
+  <Step title="Create a backup">
+    Go to **Settings \> System \> Backup** and click **Create Backup**. Give it a descriptive name, such as "Before Summer Inventory Update."
+  </Step>
+  <Step title="View backup history">
+    All backups are listed with the date, size, and name. You can download the snapshot or restore from it.
+  </Step>
+  <Step title="Restore from backup">
+    Click **Restore** next to any backup. Tripbone will roll back your entire database to that point in time. This action cannot be undone.
+  </Step>
+</Steps>
+
+<Warning>
+  Always create a backup before making major changes to inventory, pricing, or settings. A restore will overwrite all data created after the backup date, including new bookings.
+</Warning>
+
+<Note>
+  Enterprise plans include API and webhook access for advanced CRM sync and custom integrations. If you need API keys or dedicated webhook support, contact your success manager.
+</Note>
+
+## Next steps
+
+- [Manage team roles so the right people can access integrations](/settings/user-roles)
+- [Set up your brand and storefront design](/design/brand-settings)

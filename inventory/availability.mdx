@@ -1,0 +1,93 @@
+---
+title: "Manage Tour Availability and Time Slots"
+sidebarTitle: "Availability"
+description: "Set daily or multi-slot schedules, block dates in bulk, configure automatic booking cutoff windows, and prevent overbooking with Tripbone's live occupancy engine."
+---
+
+Availability management in Tripbone keeps your calendar accurate without constant manual updates. You define when a tour runs, how many seats are open per departure, and how far in advance guests must book. The live occupancy engine counts confirmed reservations in real time and closes a slot automatically when it hits capacity, so you never accidentally overbook.
+
+## Open the Availability panel
+
+1. From the left sidebar, choose **Inventory**.
+2. Click a tour name to open its detail page.
+3. Select the **Availability** tab.
+
+## Choose a schedule type
+
+Tripbone supports two ways to structure your calendar.
+
+### Daily schedule
+
+Use this when a tour runs once per day at a fixed time, such as a full-day island cruise that departs every morning at 09:00.
+
+1. Under **Schedule Type**, select **Daily**.
+2. Pick the default **Departure time**.
+3. Choose the **Days of the week** the tour operates (for example, Tuesday through Sunday, closed Monday).
+4. Set the **Default capacity** (maximum guests per departure).
+5. Click **Save**.
+
+### Multi-slot schedule
+
+Use this when a tour runs several times a day, such as a city walking tour with morning, afternoon, and evening departures.
+
+1. Under **Schedule Type**, select **Multi-slot**.
+2. Click **Add Slot** for each departure time you offer (for example, Sunrise 06:00, Midday 12:00, Sunset 17:30).
+3. Assign a **Capacity** and optional **Slot label** to each time.
+4. Choose the **Days of the week** each slot runs.
+5. Click **Save**.
+
+Guests browsing your storefront see every open slot and can pick the one that fits their itinerary.
+
+## Block dates in bulk
+
+When you need to close multiple days at once (holidays, maintenance, guide vacations), use the bulk blocker instead of editing each day individually.
+
+1. Click **Block Dates** in the Availability tab.
+2. Select a **Date range** on the calendar.
+3. Choose whether to block **All slots** or only specific time slots.
+4. Add an optional **Reason** (visible internally to your team).
+5. Click **Apply Block**.
+
+Blocked dates appear grayed out on the public calendar and cannot be booked.
+
+## Configure automatic booking cutoff
+
+A cutoff window prevents last-minute reservations that you do not have time to prepare for.
+
+1. Under **Booking Rules**, find **Cutoff window**.
+2. Enter a value and unit (for example, **2 hours**, **24 hours**, or **3 days** before departure).
+3. Click **Save**.
+
+Once the cutoff passes, the slot is automatically hidden from the storefront and unavailable for new bookings.
+
+<Warning>
+  Always set a cutoff window. Without one, a guest could book five minutes before departure, leaving you no time to assign a guide, prepare equipment, or confirm logistics.
+</Warning>
+
+## Adjust seasonal capacity
+
+If your tour runs larger groups in peak season and smaller, intimate groups in low season, create seasonal capacity rules.
+
+1. Click **Add Season** under **Capacity Rules**.
+2. Define the **Date range** (for example, June 1 to August 31).
+3. Set the **Capacity override** for that period.
+4. Click **Save**.
+
+The override applies only within the season range; outside those dates, the default capacity resumes automatically.
+
+## Monitor live occupancy
+
+At the top of the Availability tab, the **Live Occupancy** bar shows:
+
+- **Total seats** today across all slots for this tour
+- **Confirmed bookings**
+- **Remaining availability**
+- **Waitlist count** (if you enabled waitlists in Settings)
+
+If a slot is at risk of selling out, the bar turns amber. When fully booked, it turns red and the slot closes to new reservations.
+
+## Next steps
+
+- [Manage and update bookings](/bookings/manage)
+- [Dispatch guides and drivers](/bookings/dispatch)
+- [Import bookings from Viator, Klook, and GetYourGuide](/bookings/ota-import)

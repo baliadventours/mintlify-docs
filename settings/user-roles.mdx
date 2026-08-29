@@ -1,0 +1,84 @@
+---
+title: "Manage Your Team's Roles and Permissions"
+sidebarTitle: "User Roles"
+description: "Tripbone supports four role types — Super Admin, Operations Manager, Staff, and Supplier/Vendor — each with scoped access so your team sees only what they need."
+---
+
+As your tour business grows, you will need to bring guides, reservation staff, and partner suppliers into Tripbone without giving everyone full control. Tripbone's role system lets you invite team members and limit what they can see and do based on their job.
+
+## Role permissions at a glance
+
+| Role | Settings | Finances | Bookings | Inventory | Dispatch |
+| --- | --- | --- | --- | --- | --- |
+| **Super Admin** | Full access | Full access | Full access | Full access | Full access |
+| **Operations Manager** | General settings only | View and export | Full access | Full access | Full access |
+| **Staff / Agent** | None | None | Create and manage | View only | View only |
+| **Supplier / Vendor** | None | View own commissions only | View own bookings only | Manage own tours only | Receive dispatch only |
+
+## Invite a team member
+
+<Steps>
+  <Step title="Open Users settings">
+    Go to **Settings \> Users** and click **Invite User**.
+  </Step>
+  <Step title="Enter their details">
+    Fill in their name, email address, and phone number.
+  </Step>
+  <Step title="Assign a role">
+    Select one of the four roles from the dropdown. If you are unsure, start with Staff and upgrade later.
+  </Step>
+  <Step title="Send invitation">
+    Click **Send Invite**. The user will receive an email with a secure link to set their password and log in.
+  </Step>
+</Steps>
+
+## Supplier and Vendor portal
+
+The Supplier/Vendor role is designed for external partners who run tours on your platform but are not part of your internal team.
+
+When you assign this role, the partner gets access to a limited dashboard where they can:
+
+- View bookings for their own tours only
+- Manage availability and time slots for their own inventory
+- Update their tour descriptions and photos (subject to your admin approval)
+- See commission reports for their payouts
+
+<Steps>
+  <Step title="Enable vendor approval">
+    In **Settings \> Users**, toggle **Require Admin Approval for Vendor Edits**.
+  </Step>
+  <Step title="Review pending changes">
+    When a vendor submits an update, you will see a notification in your dashboard. Click **Review Changes** to approve or reject.
+  </Step>
+</Steps>
+
+## Customer accounts
+
+Guests who book with you can create accounts to manage their reservations. Customer accounts include:
+
+- **Guest dashboard**: View upcoming and past bookings, download invoices, and reschedule where permitted.
+- **Wishlists**: Save tours for later and receive price-drop alerts.
+- **Verified reviews**: After completing a tour, guests can leave a review that appears on your tour page.
+
+Customer accounts are self-service. You do not need to create them manually.
+
+## Activity logs
+
+Tripbone logs every significant action in your store so you can audit who did what and when. The activity log records:
+
+- User logins and failed login attempts
+- Booking creations, edits, and cancellations
+- Inventory changes and price updates
+- Commission rule modifications
+- Settings changes
+
+Access the log from **Settings \> Users \> Activity Log**. You can filter by user, action type, and date range.
+
+<Note>
+  Only Super Admins can access billing information, system settings, and the backup and restore tools. If you need to change your plan or restore data, a Super Admin must do it.
+</Note>
+
+## Next steps
+
+- [Connect analytics and webhooks for your team](/settings/integrations)
+- [Learn how to dispatch guides and drivers from bookings](/bookings/dispatch)
